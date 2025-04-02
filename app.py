@@ -53,12 +53,12 @@ def add():
   else:
     return render_template('add.html')
 # Second return
-  @app.route("/index.html", methods=['GET', 'POST']) #Add Student
+@app.route("/index.html", methods=['GET', 'POST']) #Add Student
 def index():
   if request.method == 'POST':
     pass
   else:
-    return render_template('/index.html')
+    return render_template('index.html')
 
   return '{"Result":"Success"}'
 @app.route("/") #Default - Show Data
